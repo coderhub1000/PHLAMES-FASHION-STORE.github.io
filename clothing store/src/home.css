@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+i{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+
+}
+.navbar{
+    background-color: black;
+    color: white;
+    padding: 25px 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-style: italic;
+    font-size: large;
+    font-weight: bold;
+}
+.cart{
+    background-color: #fff; 
+    color:black;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.cartAmount{
+    font-size: 16px;
+    background-color: red;
+    color: #fff;
+   position: absolute;
+   top: -15px;
+   right: -10px;
+   padding: 3px;
+   border-radius: 3px;
+   
+}
+
+
+.main{
+    background: url("../images/tailoring.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    color: black;
+    font-size: xx-large;
+    font-weight: 800;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main {
+    text-align: center;
+    padding-top: 200px;
+}
+.main button{
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bolder;
+}
+
+.main button:hover{
+    background-color:black;
+    color:white;
+    transition: 1s;
+}
+
+.intro{
+    align-items: center;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    border: 20px;
+}
+
+.shop{
+    display: grid;
+    grid-template-columns: repeat(5, 223px);
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: none;
+}
+@media (max-width: 768px) {
+    .shop {
+        grid-template-columns: repeat(3, 1fr); /* Display two items per row */
+        gap: 10px; /* Reduce the gap between items */
+    }
+}
+.main{
+    height: 500px;
+}
+
+/* For even smaller screens (e.g., very narrow mobile phones) */
+@media (max-width: 480px) {
+    .shop {
+        grid-template-columns: repeat(1, 2fr); /* Display one item per row */
+    }
+}
+main{
+    height: 500px;
+}
+
+.item{
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.item img{
+    width: 100%;
+    border-radius: 2px 2px 0 0;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.price-quantity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 18px;
+}
+
+.bi-dash-lg{
+ color: red;
+}
+
+.bi-plus-lg{
+    color: green;
+}
+
+
+
+/**
+* ! styles for label in bag.html
+**/
+
+.text-center{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.HomeBtn,
+#calculateButton,
+.checkout,
+.removeAll{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+ button#calculateButton{
+    
+    font-weight: bolder;
+    font-size: larger;
+}
+
+button.checkout{
+    background-color: green;
+}
+
+button.removeAll{
+    background-color: red;
+}
+
+.bi-x-lg{
+    color: red;
+    font-weight: bold;
+}
+
+/**
+* ! styles for the shopping-cart
+**/
+.shopping-bag{
+    display: grid;
+    grid-template-columns: repeat(1,320px);
+    justify-content: center;
+}
+
+
+.cart-item{
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.title-price-x{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 195px;
+}
+
+.title-price{
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.card-item-price{
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 6px;
+}
+
+#totalBill{
+    font-size: 1000;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    
+}
+
+
+
+

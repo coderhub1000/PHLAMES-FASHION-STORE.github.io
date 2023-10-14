@@ -1,0 +1,272 @@
+*{
+    
+    margin: 0%;
+}
+
+
+
+.container {
+    display: flex;
+}
+
+.image-section {
+    flex: 1;
+    background-image: url('../images/logo3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
+}
+
+.content-section {
+    flex: 1;
+    padding: 20px;
+    background-color: black;
+    color:  whitesmoke;
+}
+a {
+
+    color: rgb(238, 238, 238);  
+    font-family: sans-serif;
+    font-weight: bolder;
+    
+}
+li{
+    list-style-type:none;
+    display: block;
+    padding: 10px;
+}
+
+ul li a{
+    text-decoration: none;
+    
+}
+p{
+    font-weight: 700;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.icon-what{
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+}
+
+.icon-twit{
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+}
+
+.icon-insta{
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+}
+button{
+    height: 30px;
+    width: 70px;
+    margin-left: 700px;
+    color: antiquewhite;
+    border-radius: 10px;
+}
+button p a{
+    color: black;
+    text-decoration: none;
+}
+.mail{
+    text-decoration: none;
+}
+
+/* Media Query for screens smaller than 768px (e.g., mobile phones) */
+@media (max-width: 1000px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        background-image: url('../images/logo3.jpg');
+        background-size: cover;
+        background-position: center;
+        height: auto;
+    }
+
+    .image-section {
+        height: 50vh; /* Adjust the height of the image section as needed */
+        background-image: none;
+    }
+    .content-section {
+        display: flex;
+        flex-direction: column;
+        background-image: url('../images/back.jpg');
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        color: white;
+        position: relative;
+    }
+
+    
+
+    ul li {
+        display: block;
+        padding: 10px 0;
+        color: white;
+    }
+
+    button {
+        margin: 10px auto;
+        background-color: white;
+        color: black;
+    }
+    a {
+
+        color:white;  
+        font-family: sans-serif;
+        font-weight: bolder;
+        
+    }
+    
+}
+
+
+/* Hide the content on screens wider than 768px */
+@media (min-width: 1000px) {
+    .mobile-only {
+        display: none;
+        font-size: larger;
+        font-weight: bolder;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
+
+/* Display the content on screens 768px and below */
+@media (max-width: 1000px) {
+    .mobile-only {
+        display: block;
+        font-size: larger;
+        font-weight: bolder;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    }
+}
+
+
+
+
+.menu-toggle div {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+
+.bar {
+    width: 30px;
+    height: 3px;
+    color: #fffdfd;
+    margin: 6px 0;
+    transition: 0.4s;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+nav{
+    display: none;
+}
+
+
+
+#mobileNav {
+    display: none;
+}
+.mobile-only{
+    margin-top: 20px;
+}
+
+#mobileNav.active {
+    margin-left: -600px;
+    display: block;
+    width: 100%;
+    top: 60px;
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+
+.hidden{
+    display: none;
+}
+.visible{
+    display: block;
+}
+
+.menu-toggle.active div:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-toggle.active div:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active div:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
+@media (max-width: 1000px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav ul.active {
+        display: block;
+    }
+
+    .bar.change {
+        background-color: #fff;
+    }
+    nav{
+        display: block;
+    }
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style for the links in the dropdown */
+.dropdown-content a {
+    display: inline;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,120 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Styling for the navigation bar (if needed) */
+.navbar {
+    background-color: black;
+    color: white;
+    padding: 25px 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-style: italic;
+    font-size: large;
+    font-weight: bold;
+}
+
+/* Styling for the product detail container */
+.product-detail-container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styling for the product image */
+.product-image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Styling for the product name */
+.product-name {
+    font-size: xx-large;
+    font-weight: bold;
+    color: black;
+}
+
+/* Styling for the product description */
+.product-description {
+    font-size: larger;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Styling for the product price */
+.product-price {
+    font-size: 24px;
+    color: green;
+    margin-top: 10px;
+}
+
+/* Styling for the add to cart button */
+.add-to-cart-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+
+/* Styling for similar products section */
+.similar-products {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Styling for individual similar product items */
+.similar-product-item {
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+/* Styling for similar product item image */
+.similar-product-item img {
+    width: 100%;
+    border-radius: 2px 2px 0 0;
+}
+
+/* Styling for similar product item details */
+.similar-product-details {
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+/* Styling for the price of similar products */
+.similar-product-price {
+    font-size: 18px;
+    color: green;
+}
+
+/* Styling for the add to cart button for similar products */
+.add-to-cart-similar-button {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+/* Add any other specific styles you need for the product detail page */
